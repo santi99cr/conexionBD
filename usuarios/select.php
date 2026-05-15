@@ -30,7 +30,6 @@
                 <th>Nombres</th>
                 <th>Correo</th>
             </tr>
-        </table>
 
         <?php
                 foreach ($resultado as $usuario) {
@@ -42,7 +41,10 @@
                     </tr>
                 <?php
                 }
+        ?>
+        </table>
 
+        <?php
             } catch (\Throwable $th) {
                 echo "{$th->getMessage()}";
             }
@@ -50,7 +52,7 @@
 
         ?>
 
-        
+
 
     </body>
 </html>
