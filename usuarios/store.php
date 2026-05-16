@@ -3,8 +3,8 @@ require_once("../conexion.php");
 $conexion = conectar();
 
 if ($conexion) {
-    $nombre = "Santiago";
-    $correo = "santiago@gmail.com";
+    $nombre = $_POST["nombre"];
+    $correo = $_POST["correo"];
 
     $consulta = $conexion->prepare("INSERT INTO usuarios (nombre, correo) VALUES (:nombre, :correo)");
 
@@ -12,6 +12,8 @@ if ($conexion) {
     $consulta->bindParam(":correo", $correo);
 
     $consulta->execute();
+
+    header("location: ./select.php");
 
     echo "Usuario insertado correctamente: ID: ". $conexion->lastInsertId();
 }

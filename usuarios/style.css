@@ -14,10 +14,17 @@ body {
     min-height: 100vh;
 }
 
-h2 {
+h1, h2 {
     color: #1a1a2e;
-    font-size: 1.8rem;
     margin-bottom: 24px;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.8rem;
 }
 
 table {
@@ -60,4 +67,76 @@ td {
 
 tr:last-child td {
     border-bottom: none;
+}
+
+/* Links */
+
+a {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #1a1a2e;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid #1a1a2e;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+a:hover {
+    background-color: #1a1a2e;
+    color: #fff;
+}
+
+/* Form */
+
+form {
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    color: #1a1a2e;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1a1a2e;
+}
+
+button {
+    margin-top: 8px;
+    padding: 10px 20px;
+    background-color: #1a1a2e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #16213e;
 }

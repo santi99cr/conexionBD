@@ -24,6 +24,8 @@
                 $resultado = $consulta->fetchAll(PDO::FETCH_ASSOC);
         ?>
 
+        <a href="create.php">Nuevo Usuario</a>
+
         <table>
             <tr>
                 <th>ID</th>
